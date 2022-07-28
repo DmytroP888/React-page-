@@ -136,52 +136,34 @@ function MultiView(props) {
           <div className="text-12 montserrat-medium-fuel-yellow-16px">{text115}</div>
           <div className="overlap-group35 border-1px-black-6">
             <div className="text-224 montserrat-medium-black-16px-2">{text327}</div>
-            <img alt=""
-              className="group-5"
+            <img alt="" className="group-5"
               src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62c0becead7f05c93f81b00f/img/group-20@2x.svg"
             />
           </div>
         </div>
         <div className="flex-row-7">
 
-          {/* -------------------------------- */}
+          {/* --------------- Filter left sidebar start --------------- */}
           <ul>
-            <Collapse classElementMenuFilter="rectangle-281" titleFilter="Фильтр товаров" styleTitleFilter="text-114 montserrat-bold-white-20px">
+            <Collapse classElementMenuFilter="rectangle-281" titleFilter="Фільтр товарів" styleTitleFilter="text-114 montserrat-bold-white-20px">
               {titleFilter} {styleTitleFilter} {classElementMenuFilter} {arrowFilter}
               <div className="filterPriceBox-1">
-                <div className="text-113 montserrat-semi-bold-licorice-20px">Цена</div>
+                <div className="text-113 montserrat-semi-bold-licorice-20px">Ціна</div>
                 <img alt="" className="group-6" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>
-
                 <div>
-                  {/* <div className="containerRangeFilter">
-                    <div className="rangeline-yellow">
-                      <div className="circle-yellow"></div>
-                      <div className="circle-black"></div>
-                      <div className="textrange-left montserrat-medium-licorice-14px">  2000 грн.</div>
-                    </div>
-                    <div className="rangeline-yellow-right">
-                      <div className="circle-yellow-right"  >
-                        <div className="circle-black-right"></div>
-                        <div className="textrange-right montserrat-medium-licorice-14px"> 5000 грн.</div></div>
-                    </div>
-                  </div> */}
-
-                  <FilterPriceRangeInputBlock >
-
-                  </FilterPriceRangeInputBlock>
-
+                  <FilterPriceRangeInputBlock />
                 </div>
               </div>
 
               <li >
                 <Collapse classElementMenuFilter="rectangle-281" arrowFilter={<img alt="arrow" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>}
-                  titleFilter="Производство" styleTitleFilter="text-114 montserrat-semi-bold-white-20px"
+                  titleFilter="Тип" styleTitleFilter="text-114 montserrat-semi-bold-white-20px"
                 >
                   <div className='filterPriceBox-2'>
                     <ul>
                       <li>
-                        <input type="checkbox" name="production" className="custom-checkbox" id="production" />
-                        <label for='production'>SpaceX</label>
+                        <input type="checkbox" name="type" className="custom-checkbox" id="production" />
+                        <label for='type'>SpaceX</label>
                         <span className="text-116 montserrat-medium-fuel-yellow-16px">(50)</span>
                       </li>
                     </ul>
@@ -249,12 +231,7 @@ function MultiView(props) {
                 </Collapse>
               </li></Collapse>
           </ul>
-
-
-          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-
-          {/* -------------------------------- */}
-
+          {/* --------------- Filter left sidebar end --------------- */}
 
           <div className="contentPageMulti">
             <div className="containerProductsMultiCart">
